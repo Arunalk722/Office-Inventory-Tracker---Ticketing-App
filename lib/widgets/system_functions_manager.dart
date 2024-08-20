@@ -129,10 +129,10 @@ class ScanUserInfo {
 
 class SendSMS {
   static Future<void> sendSms(String receiver, String msg) async {
-    final String baseUrl = 'http://124.43.64.2:882/default.aspx';
-
-    final String user = 'ArunaShanthaAdmin';
-    final String hash = '19980722Aruna';
+    //sms getaway credentinals
+    final String baseUrl = 'http://192.168.50.180:8080/index.aspx';
+    final String user = 'yourUserName';
+    final String hash = 'HashKey';
 
     final Uri url =
         Uri.parse('$baseUrl?User=$user&Hash=$hash&Msg=$msg&Recever=$receiver');
